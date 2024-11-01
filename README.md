@@ -27,13 +27,14 @@
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
 ```
+<br>
 나. 의존성 설치: 프로젝트 디렉터리에서 의존성을 설치합니다.<br>
 ```
 flutter pub get
 ```
 <br>
 다. 네이버 클라우드 API 키 설정:<br>
-.env 파일에 네이버 클라우드 API 인증 정보를 추가하여 환경 변수를 설정합니다.<br><br>
+.env 파일에 네이버 클라우드 API 인증 정보를 추가하여 환경 변수를 설정합니다.<br>
 
 5. 폴더구조<br> 
 ```
