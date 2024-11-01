@@ -40,11 +40,11 @@ project_root/
 ├── lib/
 │   ├── main.dart                 # Flutter 앱의 시작 파일
 │   ├── screens/
-│   │   └── chat_screen.dart       # 사용자-챗봇 대화 화면
+│   │   └── chat.dart       # 사용자-챗봇 대화 화면
 │   ├── services/
-│   │   └── chatbot_service.dart   # 네이버 클라우드 챗봇 API 연동 로직
+│   │   └── chatbot.dart   # 네이버 클라우드 챗봇 API 연동 로직
 │   └── widgets/
-│       └── message_bubble.dart    # 대화 메시지를 표시하는 위젯
+│       └── message.dart    # 대화 메시지를 표시하는 위젯
 ├── assets/                        # 이미지, 폰트 등의 자산 파일
 ├── .env                           # 환경 변수 파일 (민감 정보는 여기에 저장)
 ├── pubspec.yaml                   # 프로젝트 의존성 파일
