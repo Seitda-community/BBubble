@@ -20,19 +20,17 @@
 실시간 서비스 제공 한계: 24시간 자동화된 서비스를 위해 안정적인 시스템 환경과 지속적인 모니터링이 필요합니다.<br>
 
 4. 시작하기<br>
-  이 프로젝트를 시작하려면 먼저 이 저장소를 클론하고 아래 절차에 따라 설정합니다.<br><br>
+이 프로젝트를 시작하려면 먼저 이 저장소를 클론하고 아래 절차에 따라 설정합니다.<br><br>
 
 가. 저장소 클론<br>
 ```
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
 ```
-<br>
 나. 의존성 설치: 프로젝트 디렉터리에서 의존성을 설치합니다.<br>
 ```
 flutter pub get
 ```
-<br>
 다. 네이버 클라우드 API 키 설정:<br>
 .env 파일에 네이버 클라우드 API 인증 정보를 추가하여 환경 변수를 설정합니다.<br>
 
@@ -54,25 +52,24 @@ project_root/
 ```
 
 6. 환경설정<br>
- 가. API 키 설정:<br>
+가. API 키 설정:<br>
 .env 파일을 생성하고 다음과 같이 API 키와 시크릿 키를 입력합니다.<br>
 ```
 NAVER_CLOUD_CLIENT_ID=your_client_id
 NAVER_CLOUD_CLIENT_SECRET=your_client_secret
 ```
 
- 나. 네이버 클라우드 API 연동:<br>
+나. 네이버 클라우드 API 연동:<br>
 파일에 네이버 클라우드 챗봇 API를 호출하는 코드를 설정합니다.<br>
 ```
 chatbot_service.dart 
 ```
 
 7. 사용법<br>
- 가. 앱 실행: 에뮬레이터 또는 실제 기기에서 앱을 실행합니다.<br>
+가. 앱 실행: 에뮬레이터 또는 실제 기기에서 앱을 실행합니다.<br>
 ```
 flutter run
 ```
-<br>
 나. 챗봇과 대화하기: 대화 화면에서 실시간 키워드 추천, 복지 서비스, 개인 맞춤형 퀴즈, 생성형 지식 서비스를 경험할 수 있습니다.<br><br>
 
 8. 라이선스<br>
