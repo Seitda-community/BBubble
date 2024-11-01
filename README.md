@@ -21,13 +21,13 @@
 
 
 4.시작하기<br>
-이 프로젝트를 시작하려면 먼저 이 저장소를 클론하고 아래 절차에 따라 설정합니다.<br><br>
+  이 프로젝트를 시작하려면 먼저 이 저장소를 클론하고 아래 절차에 따라 설정합니다.<br><br>
 
 1) 저장소 클론<br>
 git clone https://github.com/your-username/your-repo.git<br>
 cd your-repo<br><br>
 
-2) 의존성 설치: 프로젝트 디렉터리에서 의존성을 설치합니다.<br>
+2) 의존성 설치: 프로젝트 디렉터리에서 의존성을 설치합니다.
 flutter pub get<br><br>
 
 3) 네이버 클라우드 API 키 설정:<br>
@@ -59,7 +59,7 @@ NAVER_CLOUD_CLIENT_SECRET=your_client_secret<br><br>
 chatbot_service.dart 파일에 네이버 클라우드 챗봇 API를 호출하는 코드를 설정합니다.<br><br>
 
 7. 사용법<br>
-1) 앱 실행: 에뮬레이터 또는 실제 기기에서 앱을 실행합니다.<br><br>
+1) 앱 실행: 에뮬레이터 또는 실제 기기에서 앱을 실행합니다.<br>
 flutter run<br><br>
 
 2) 챗봇과 대화하기: 대화 화면에서 실시간 키워드 추천, 복지 서비스, 개인 맞춤형 퀴즈, 생성형 지식 서비스를 경험할 수 있습니다.<br><br>
