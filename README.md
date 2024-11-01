@@ -27,26 +27,29 @@
 git clone https://github.com/your-username/your-repo.git<br>
 cd your-repo<br><br>
 
-2) 의존성 설치: 프로젝트 디렉터리에서 의존성을 설치합니다.
+2) 의존성 설치: 프로젝트 디렉터리에서 의존성을 설치합니다.<br>
 flutter pub get<br><br>
 
 3) 네이버 클라우드 API 키 설정:<br>
 .env 파일에 네이버 클라우드 API 인증 정보를 추가하여 환경 변수를 설정합니다.<br><br>
 
 5. 폴더구조<br> 
-project_root/<br>
-├── lib/<br>
-│   ├── main.dart                 # Flutter 앱의 시작 파일<br>
-│   ├── screens/<br>
-│   │   └── chat_screen.dart       # 사용자-챗봇 대화 화면<br>
-│   ├── services/<br>
-│   │   └── chatbot_service.dart   # 네이버 클라우드 챗봇 API 연동 로직<br>
-│   └── widgets/<br>
-│       └── message_bubble.dart    # 대화 메시지를 표시하는 위젯<br>
-├── assets/                        # 이미지, 폰트 등의 자산 파일<br>
-├── .env                           # 환경 변수 파일 (민감 정보는 여기에 저장)<br>
-├── pubspec.yaml                   # 프로젝트 의존성 파일<br>
-└── README.md                      # 프로젝트 설명 파일<br><br>
+```
+project_root/
+├── lib/
+│   ├── main.dart                 # Flutter 앱의 시작 파일
+│   ├── screens/
+│   │   └── chat_screen.dart       # 사용자-챗봇 대화 화면
+│   ├── services/
+│   │   └── chatbot_service.dart   # 네이버 클라우드 챗봇 API 연동 로직
+│   └── widgets/
+│       └── message_bubble.dart    # 대화 메시지를 표시하는 위젯
+├── assets/                        # 이미지, 폰트 등의 자산 파일
+├── .env                           # 환경 변수 파일 (민감 정보는 여기에 저장)
+├── pubspec.yaml                   # 프로젝트 의존성 파일
+└── README.md                      # 프로젝트 설명 파일
+```
+
 
 
 6. 환경설정<br>
