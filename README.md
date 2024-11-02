@@ -31,8 +31,8 @@
 │   ├── assets/             # 이미지 및 폰트 파일
 │   ├── components/         # UI 컴포넌트 파일
 │   │   ├── Chatbot.js      # 법률 챗봇 UI 및 로직
-│   │   ├── GPTService.js   # 통합 GPT 지식 서비스
 │   │   ├── GameService.js  # 법률 퀴즈 및 게임 기능
+│   │   ├── GPTService.js   # 통합 GPT 지식 서비스
 │   │   └── Keyword.js      # 키워드 추천 기능
 │   ├── services/           # API 호출 및 데이터 로직
 │   │   ├── naverCloudAPI.js # 네이버 클라우드 API 연동
