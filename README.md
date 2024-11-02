@@ -22,55 +22,29 @@
 4. 시작하기<br>
 이 프로젝트를 시작하려면 먼저 이 저장소를 클론하고 아래 절차에 따라 설정합니다.<br><br>
 
-가. 저장소 클론<br>
-```
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-```
-나. 의존성 설치: 프로젝트 디렉터리에서 의존성을 설치합니다.<br>
-```
-flutter pub get
-```
-다. 네이버 클라우드 API 키 설정:<br>
-.env 파일에 네이버 클라우드 API 인증 정보를 추가하여 환경 변수를 설정합니다.<br>
-
 5. 폴더구조<br> 
 ```
-project_root/
-├── lib/
-│   ├── main.dart                 # Flutter 앱의 시작 파일
-│   ├── screens/
-│   │   └── chat.dart       # 사용자-챗봇 대화 화면
-│   ├── services/
-│   │   └── chatbot.dart   # 네이버 클라우드 챗봇 API 연동 로직
-│   └── widgets/
-│       └── message.dart    # 대화 메시지를 표시하는 위젯
-├── assets/                        # 이미지, 폰트 등의 자산 파일
-├── .env                           # 환경 변수 파일 (민감 정보는 여기에 저장)
-├── pubspec.yaml                   # 프로젝트 의존성 파일
-└── README.md                      # 프로젝트 설명 파일
+├── public/                 # 정적 파일 및 아이콘
+│   ├── index.html          # 메인 HTML 파일
+│   └── manifest.json       # PWA 설정 파일
+├── src/
+│   ├── assets/             # 이미지 및 폰트 파일
+│   ├── components/         # UI 컴포넌트 파일
+│   │   ├── Chatbot.js      # 법률 챗봇 UI 및 로직
+│   │   ├── GPTService.js   # 통합 GPT 지식 서비스
+│   │   ├── GameService.js  # 법률 퀴즈 및 게임 기능
+│   │   └── Keyword.js      # 키워드 추천 기능
+│   ├── services/           # API 호출 및 데이터 로직
+│   │   ├── naverCloudAPI.js # 네이버 클라우드 API 연동
+│   ├── styles/             # CSS 파일 및 스타일
+│   ├── App.js              # 메인 앱 컴포넌트
+│   └── index.js            # 진입점 파일
+└── README.md
 ```
 
 6. 환경설정<br>
-가. API 키 설정:<br>
-.env 파일을 생성하고 다음과 같이 API 키와 시크릿 키를 입력합니다.<br>
-```
-NAVER_CLOUD_CLIENT_ID=your_client_id
-NAVER_CLOUD_CLIENT_SECRET=your_client_secret
-```
-
-나. 네이버 클라우드 API 연동:<br>
-파일에 네이버 클라우드 챗봇 API를 호출하는 코드를 설정합니다.<br>
-```
-chatbot_service.dart 
-```
 
 7. 사용법<br>
-가. 앱 실행: 에뮬레이터 또는 실제 기기에서 앱을 실행합니다.<br>
-```
-flutter run
-```
-나. 챗봇과 대화하기: 대화 화면에서 실시간 키워드 추천, 복지 서비스, 개인 맞춤형 퀴즈, 생성형 지식 서비스를 경험할 수 있습니다.<br><br>
 
 8. 라이선스<br>
 이 프로젝트는 MIT 라이선스를 따릅니다. 자세한 내용은 LICENSE 파일을 참조하세요.<br><br>
