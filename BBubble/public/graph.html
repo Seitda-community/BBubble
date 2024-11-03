@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO 메타 태그 -->
+	<meta name="keywords" content="법률 지식, AI, 키워드 추천, 챗봇, 게입, GPT">
+	<meta name="description" content="실시간 법률 지식 AI 플랫폼 버블버블">
+	<meta name="author" content="BubbleBubble Team">
+	<meta name="robots" content="index, follow">
+	<!-- // SEO 메타 태그 // -->
+
+    <title>버블버블 법률 지식 AI 플랫폼</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="../src/styles/style.css">
+    <script src="../src/components/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+<body>
+    <header>
+        <h1>자주쓰는 키워드</h1>
+    </header>
+    <main>
+        <!-- 탭 -->
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('field')">분야별</div>
+            <div class="tab" onclick="showTab('age')">연령별</div>
+            <div class="tab" onclick="showTab('region')">지역별</div>
+        </div>
+
+        <!-- 콘텐츠 영역 -->
+        <div class="content">
+            <!-- 분야별 키워드 그래프 -->
+            <div id="field" class="active">
+                <h3>분야별 자주쓰는 법률 키워드</h3>
+                <div class="chart-container">
+                    <canvas id="fieldChart"></canvas>
+                </div>
+            </div>
+
+            <!-- 연령별 키워드 그래프 -->
+            <div id="age">
+                <h3>연령별 자주쓰는 법률 키워드</h3>
+                <div class="chart-container">
+                    <canvas id="ageChart"></canvas>
+                </div>
+            </div>
+
+            <!-- 지역별 키워드 그래프 -->
+            <div id="region">
+                <h3>지역별 자주쓰는 법률 키워드</h3>
+                <div class="chart-container">
+                    <canvas id="regionChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <a class="ft btn btn-gradient" href="chat.html">채팅하기</a>
+    </main>
+    <footer>
+        <p>©2024 민관협력 디지털 플랫폼</p>
+    </footer>
+</body>
+</html>
