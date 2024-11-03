@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- SEO 메타 태그 -->
+	<meta name="keywords" content="법률 지식, AI, 키워드 추천, 챗봇, 게입, GPT">
+	<meta name="description" content="실시간 법률 지식 AI 플랫폼 버블버블">
+	<meta name="author" content="BubbleBubble Team">
+	<meta name="robots" content="index, follow">
+	<!-- // SEO 메타 태그 // -->
+
+    <title>버블버블 법률 지식 AI 플랫폼</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="../src/styles/style.css">
+    <script src="../src/components/com.js"></script>
+</head>
+<body>
+	<header>
+        <h1>기본정보 입력하기</h1>
+    </header>
+	<main>
+		<div>
+			<div class="section">
+				<h3>기본 정보</h3>
+				<ul class="info">
+					<li>
+						<label for="name">이름:</label>
+						<input type="text" id="name" name="name" required placeholder="이름을 입력하세요">
+					</li>
+					<li>
+						<label for="age">나이:</label>
+						<input type="number" id="age" name="age" required placeholder="나이를 입력하세요">
+					</li>
+				</ul>
+			</div>
+
+			<div class="section">
+				<h3>법률 분야 선택</h3>
+				<div class="buttons" id="law-buttons">
+					<button class="button">가족법</button>
+					<button class="button">형사법</button>
+					<button class="button">상법</button>
+					<button class="button">노동법</button>
+					<button class="button">부동산법</button>
+					<button class="button">지적재산법</button>
+					<button class="button">민사법</button>
+					<button class="button">국제법</button>
+					<button class="button">소비자 보호법</button>
+				</div>
+			</div>
+			<div class="section">
+				<h3>목소리 선택</h3>
+				<div class="buttons" id="voice-buttons">
+					<button class="button">친근한</button>
+					<button class="button">씩씩한</button>
+					<button class="button">차분한</button>
+					<button class="button">상냥한</button>
+				</div>
+			</div>
+			<button type="button" class="btn btn-gradient" onclick="submitForm()">제출</button>
+		</div>
+	</main>
+	<footer>
+		<p>©2024 민관협력 디지털 플랫폼</p>
+    </footer>
+	<div class="modal" id="info-modal">
+		<div class="modal-content">
+			<h4>입력된 정보</h4>
+			<p id="modal-text"></p>
+			<button class="close-btn" onclick="closeModal()">닫기</button>
+		</div>
+	</div>
+
+</body>
+</html>
