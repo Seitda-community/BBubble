@@ -36,16 +36,27 @@ function submitForm() {
 		return;
 	}
 
-	// 모달 창에 선택된 정보 표시
-	const modalText = `이름: ${name}<br>나이: ${age}<br>선택된 법률 분야: ${selectedLaws.join(", ")}<br>목소리: ${selectedVoice.join(", ")}`;
-	document.getElementById('modal-text').innerHTML = modalText;
+	// 로딩 화면 표시
+	document.getElementById('loading-screen').style.display = 'flex';
 
-	// 모달 창 열기
-	document.getElementById('info-modal').style.display = 'flex';
+	// 로딩 시간을 시뮬레이션하기 위해 setTimeout 사용
+	setTimeout(() => {
+		// 모달 창에 선택된 정보 표시
+		const modalText = `이름: ${name}<br>나이: ${age}<br>선택된 법률 분야: ${selectedLaws.join(", ")}<br>목소리: ${selectedVoice.join(", ")}`;
+		document.getElementById('modal-text').innerHTML = modalText;
+
+		// 로딩 화면 숨기기 및 모달 창 열기
+		document.getElementById('loading-screen').style.display = 'none';
+		document.getElementById('info-modal').style.display = 'flex';
+	}, 2000); // 2초 동안 로딩 화면 표시
 }
+
 
 // 모달 닫기 및 페이지 이동 함수
 function closeModal() {
 	document.getElementById('info-modal').style.display = 'none';
 	window.location.href = 'graph.html'; // graph.html로 이동
 }
+
+
+
