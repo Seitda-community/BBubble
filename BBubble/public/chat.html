@@ -12,7 +12,6 @@
 	<!-- // SEO 메타 태그 // -->
 
     <title>버블버블 법률 지식 AI 플랫폼</title>
-    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="../src/styles/style.css">
     <script src="../src/components/chat.js"></script>
 </head>
@@ -23,13 +22,15 @@
 	<main>
 		<div class="chatarea">
             <div class="chat-display" id="chat-display">
-                <p class="bot bot-message">안녕하세요! 법률 상담과 관련된 질문을 입력해 주세요.</p>
-            </div>
+				<p class="loading-message" id="loading-message"></p>
+			</div>
             <div class="chat-input-area">
                 <input type="text" id="user-input" placeholder="질문을 입력하세요..." autofocus>
-                <button onclick="sendMessage()">전송</button>
+                <button class="send" onclick="sendMessage()">전송</button>
+                <button class="voice" onclick="sendVoice()">음성</button>
             </div>
         </div>
+        <a class="ft btn btn-gradient" href="game.html">게임하기</a>
 	</main>
 	<footer>
 		<p>©2024 민관협력 디지털 플랫폼</p>

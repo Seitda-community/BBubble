@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO 메타 태그 -->
+    <meta name="keywords" content="법률 지식, AI, 키워드 추천, 챗봇, 게입, GPT">
+    <meta name="description" content="실시간 법률 지식 AI 플랫폼 버블버블">
+    <meta name="author" content="BubbleBubble Team">
+    <meta name="robots" content="index, follow">
+    <!-- // SEO 메타 태그 // -->
+
+    <title>버블버블 법률 지식 AI 플랫폼</title>
+    <link rel="stylesheet" href="../src/styles/style.css">
+    <script src="../src/components/game.js"></script>
+</head>
+<body>
+    <header>
+        <h1>맞춤형 게임</h1>
+    </header>
+    <main>
+        <div class="chatarea game">
+            <h2 class="quiz-title">오늘의 버블쏙쏙</h2>
+            <p id="question" class="question"></p>
+            <div id="answerInputContainer" class="input-container"></div>
+            <div class="hint-container">
+                <p>힌트: <span id="hint">힌트를 클릭하세요</span></p>
+            </div>
+            <div class="btns">
+                <button onclick="showHint()">힌트 보기</button>
+                <button onclick="nextQuestion()">다음 문제</button>
+            </div>
+        </div>
+        <a class="ft btn btn-gradient" onclick="showAnswer()">정답보기</a>
+    </main>
+    <footer>
+        <p>©2024 민관협력 디지털 플랫폼</p>
+    </footer>
+
+    <div class="modal" id="answerModal">
+        <div class="modal-content">
+            <h2>정답은</h2>
+            <p id="answerText"></p>
+            <button class="close-btn" onclick="closeModal()">닫기</button>
+        </div>
+    </div>
+</body>
+</html>
