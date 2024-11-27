@@ -40,10 +40,5 @@
 └── README.md
 ```
 
-6. 환경설정<br>
-
-7. 사용법<br>
-
-8. 라이선스<br>
-이 프로젝트는 MIT 라이선스를 따릅니다.<br>
-자세한 내용은 LICENSE 파일을 참조하세요.<br><br>
+6. 라이선스<br>
+이 프로젝트는 @bubblebubble_labs
