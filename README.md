@@ -40,5 +40,4 @@
 └── README.md
 ```
 
-6. 라이선스<br>
-이 프로젝트는 @bubblebubble_labs
+Copyright by @bubblebubble_labs
