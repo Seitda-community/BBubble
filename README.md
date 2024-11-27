@@ -40,4 +40,4 @@
 └── README.md
 ```
 
-Copyright by @bubblebubble_labs
+Copyright by @bubblebubble-labs
